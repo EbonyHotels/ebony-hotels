@@ -37,7 +37,7 @@
 	}
 
 	.form-container {
-		max-width: 600px;
+		max-width: 700px;
 	}
 
 	.form-section {
@@ -190,92 +190,11 @@
 	</div>
 	
 	<div class="container form-section form-container">
-		<h2 class="mb-4">Booking Form</h2>
-		<div id="bookingForm">
-			<!-- Enquiry Type Section -->
-			<!-- <div class="form-group">
-				<label for="enquiryType">Enquiry Type:</label>
-				<select class="form-control" id="enquiryType" name="enquiryType" onchange="toggleSections()">
-					<option value="party">Party</option>
-					<option value="room">Room</option>
-				</select>
-			</div> -->
-
-			<div class="btn-toggle-container">
-				<button type="button" class="btn btn-toggle btn-toggle-party" onclick="toggleSections('party')">Party</button>
-				<button type="button" class="btn btn-toggle btn-toggle-room" onclick="toggleSections('room')">Room</button>
-			</div>
-	
-			<!-- Party Information Section -->
-			<form class="form-group" id="partySection" onsubmit="return submitPartyForm()">
-				<label for="partyType">Event:</label>
-				<select class="form-control" id="partyType" name="partyType">
-					<option value="birthday">Birthday</option>
-					<option value="wedding">Wedding</option>
-					<option value="wedding">Conference</option>
-					<option value="wedding">Meeting</option>
-					<option value="wedding">Other Party</option>
-					<!-- Add more party types as needed -->
-				</select>
-	
-				<div class="form-group">
-					<label for="partyDate">Date of Event:</label>
-					<input type="date" class="form-control" id="partyDate" name="partyDate" required>
-				</div>
-	
-				<div class="form-group">
-					<label for="partyTime">Time of Event:</label>
-					<input type="time" class="form-control" id="partyTime" name="partyTime" required>
-				</div>
-				<div class="form-group">
-					<label for="email">Email:</label>
-					<input type="email" class="form-control" id="email" name="email" required>
-				</div>
-				<div class="form-group">
-					<label for="phone">Phone:</label>
-					<input type="phone" class="form-control" id="phone" name="phoneNumber" required>
-				</div>
-				<!-- Submit Button -->
-			<button type="submit" class="btn" style="background-color: #ffc387; color: white;">Submit</button>
-		
-			</form>
-	
-			<!-- Room Booking Section -->
-			<form class="form-group" id="roomSection" style="display: none;" onsubmit="return submitPartyForm()">
-				<label for="partyType">Room:</label>
-				<select class="form-control" id="partyType" name="partyType">
-					<option value="birthday">Family Room</option>
-					<option value="wedding">Delux Room</option>
-					<option value="wedding">Signle Room</option>
-					<option value="wedding">Standard Room</option>
-					<option value="wedding">Double Room</option>
-					<!-- Add more party types as needed -->
-				</select>
-				<label for="checkInDate">Check-In Date:</label>
-				<input type="date" class="form-control" id="checkInDate" name="checkInDate" required>
-	
-				<div class="form-group">
-					<label for="checkOutDate">Check-Out Date:</label>
-					<input type="date" class="form-control" id="checkOutDate" name="checkOutDate" required>
-				</div>
-	
-				<div class="form-group">
-					<label for="numberOfGuests">Number of Guests:</label>
-					<input type="number" class="form-control" id="numberOfGuests" name="numberOfGuests" required>
-				</div>
-				<div class="form-group">
-					<label for="email">Email:</label>
-					<input type="email" class="form-control" id="email" name="email" required>
-				</div>
-				<div class="form-group">
-					<label for="phone">Phone:</label>
-					<input type="phone" class="form-control" id="phone" name="phoneNumber" required>
-				</div>
-				<!-- Submit Button -->
-			<button type="submit" class="btn" style="background-color: #ffc387; color: white;">Submit</button>
-		
-			</form>
-		</div>
+		<div class="thanks-section">
+            <h1 class="display-4">Thank You!</h1>
+            <p class="lead" style="color: #ccc;">Your information has been received. We will reach out to you soon.</p>
+            <!-- You can customize this section with additional information or links -->
+        </div>
 	</div>
 
 	<!-- Footer -->
@@ -389,13 +308,13 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 
 	function submitPartyForm() {
         // Add party form validation logic here
-        window.location.href = "submitted.html";
+        window.location.href = "index.html";
         return false; // Prevents the form from submitting (since we're manually redirecting)
     }
 
     function submitRoomForm() {
         // Add room form validation logic here
-        window.location.href = "submitted.html";
+        window.location.href = "index.html";
         return false; // Prevents the form from submitting (since we're manually redirecting)
     }
 </script>
